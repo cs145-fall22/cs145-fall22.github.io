@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CS 145</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">CS 145 &mdash; Fall 2021</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" id="homeNav">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item" id="scheduleNav">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item" id="logisticsNav">
+            <a class="nav-link" href="#logistics">Logistics</a>
+          </li>
+          <li class="nav-item" id="honorNav">
+            <a class="nav-link" href="#honor">Honor Code</a>
+          </li>
+          <li class="nav-item" id="projectsNav">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item" id="staffNav">
+            <a class="nav-link" href="#staff">Staff</a>
+          </li>
+          <li class="nav-item" id="officehoursNav">
+            <a class="nav-link" href="#officehours">Office Hours</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-3">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-5 text-white mt-5 mb-2">Data Management and Data Systems</h1>
+          <p class="lead mb-4 text-white-50">Introduction to the use, design, and implementation of database and data-intensive systems.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row section" id="home">
+      <div class="col-md-8">
+        <h2>Course Overview</h2>
+        <hr>
+        <p>This course covers how to use databases in applications, first principles on how to scale for large data sets and how to design good data systems.</p>
+        <p>A few key topics:</p>
+        <p>&mdash; Introduction to relational data model, relational database engines, and SQL.</p>
+        <p>&mdash; How to scale systems for large data sets on servers and server clusters</p>
+        <p>&mdash; How to design good schemas based on dependencies, normal forms so we build and evolve good applications. This will include indexes, views and transactions.</p>
+        <p>The class will culminate in a hands-on programming project in SQL+Python &mdash; a key part of the course &mdash; where you will query, visualize and predict from terabytes of data on <a href="https://cloud.google.com/bigquery/">BigQuery</a>, a popular cloud database part of Google Cloud Platform.</p>
+
+      </div>
+      <div class="col-md-4">
+        <h2>Key Dates</h2>
+        <hr>
+        <address>
+          <strong>Lectures: Tues/Thurs</strong>
+          <br>4:00 PM - 5:00 PM
+          <br>NVIDIA Auditorium
+          <br>
+        </address>
+        <address>
+          <strong>Exam#1: Thursday, October 21</strong>
+          <br>Take-home (Details TBA)
+          <br>
+        </address>
+        <address>
+          <strong>Exam#2: Thursday, November 11</strong>
+          <br>Take-home (Details TBA)
+          <br>
+        </address>
+      </div>
+    </div>
+
+    <div class="row section" id="schedule">
+      <div class="col-md-12">
+        <h2>Schedule</h2>
+        <table id="scheduleTable">
+          <tbody>
+            <tr>
+              <th id="eventCol">Event</th>
+              <th id="dateCol">Date</th>
+              <th>Description</th>
+              <th>Course Materials</th>
+            </tr>
+            <tr>
+              <td>Lecture 1</td>
+              <td>9/21 Tu</td>
+              <td>
+                <b>Why Databases?</b>
+                <br><i>Concepts: Data models, DB systems overview</i>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1T_rzKgCi_qZ0Twb0IqJNthsBalAAib5ajdPVNyJPtXU/edit#slide=id.g4041ecef1b_0_6">Introduction: Why databases?</a>]
+                <br>[<a href="https://docs.google.com/presentation/d/1Fi21H06dzlRU6I7k9vIZyWujedI8pqCILEus24-iOAg/edit#slide=id.g414a0e6b39_0_0">Project outline</a>]
+                <br>[<a href="https://docs.google.com/presentation/d/1Wvat-S9rshDceMBOIUqlbN7DZmWU-RKIfhfk0SxFb-s/edit#slide=id.g3bfdbcd7cb_0_0">Systems Primer</a>]
+                <br>[<a href="docs/Getting_Google_Cloud_Platform_Credits_CS145.pdf">Getting Your Google Cloud Platform Credits</a>]
+                <br>Reading List:
+                <br>[<a href="https://aws.amazon.com/big-data/datalakes-and-analytics/?nc=sn&loc=1">AWS: Data Lakes and Analytics</a>]
+                <br>[<a href="https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/?nc=sn&loc=2">AWS: What is a Data Lake?</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 2</td>
+              <td>9/23 Th</td>
+              <td>
+                <b>SQL I</b>
+                <br><i>Concepts: Schemas, Systems, Select-From-Where</i>
+                <!-- <br>HW: 6a, 6e -->
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1BBq0mFuZS1dnYq2mdoWJ-xABJzxTW1nU7tLEhKjPpWk/edit#s">Example SQL</a>]
+                <br>[<a href="https://docs.google.com/presentation/d/1wVU8ybb9Zxyno3MpQA-vnGTX7bBD5bliysigxGIYAcI/edit?usp=sharing">SQL - Part I</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Project 1 <br>Released</td>
+              <td>9/27 Mon</td>
+              <td>
+                See Course Info for general submission information and the regrade policy.
+              </td>
+              <td>
+                [<a href="docs/Project_1_Handout.pdf" download="">project1_handout.pdf</a>]
+                <br>[<a href="docs/project1_submission.py" download="">project1_submission.py</a>]
+                <br>[<a href="docs/Getting_Started_with_BigQuery.pdf" target="_blank">Getting started with BigQuery</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 3</td>
+              <td>9/28 Tu</td>
+              <td>
+                <b>SQL II</b>
+                <br><i>Concepts: Joins, Set operators, Subqueries</i>
+                <!-- <br>HW: 6d, 6g, lab 2 -->
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/18sWsOAGG5ygjhKWBCob4TBsuCUJDgtqCmo6IKefpfhQ/edit#slide=id.g601018e311_0_10">SQL Deep Dive</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Homework 1 <br>Released</td>
+              <td>9/28 Tu</td>
+              <td>
+              </td>
+              <td>
+                [<a href="docs/CS145_Fall_2020_Homework_1.pdf">CS145_Fall_2020_Homework_1.pdf</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 4</td>
+              <td>9/30 Th</td>
+              <td>
+                <b>SQL III, Advanced</b>
+                <br><i>Concepts: Grouping, Aggregations, Nested queries</i>
+                <!-- <br>HW: 6b, 6c, 6f, lab 1 -->
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/18sWsOAGG5ygjhKWBCob4TBsuCUJDgtqCmo6IKefpfhQ/edit#slide=id.g601018e311_0_10">SQL Deep Dive (Same Slides as Previous Lecture)</a>]
+              </td>
+            </tr>
+            <!-- <tr>
+              <td>Section 1</td>
+              <td>9/25 Fr</td>
+              <td>
+                <b>9:30 AM &mdash; 10:20 AM</b>
+                <br>Remote
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1J5nMCJQZsASIRb-jn5KgueZIHS9SeIEG2VikK-nIBZA/edit?usp=sharing"> Section 1 slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 5</td>
+              <td>9/29 Tu</td>
+              <td>
+                <b>Scale: Indexing and IO Model</b>
+                <br><i></i>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1cqWEL29CPXEATGNeQrkHVuHKNzIYTfxaxqB5MnKXQsQ/edit#slide=id.g45b5182083_1_439">Scale Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 6</td>
+              <td>10/1 Th</td>
+              <td>
+                <b>Sorting, Building Indices Part 1</b>
+                <br><i></i>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1Q9ZQyTtjUSbHwtcq0rmPAfUkUDTMzK0uMKUaMM37lYM/edit#slide=id.g64ea8e0017_3_130"> Sorting, Building Indices Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Project 1 Due</td>
+              <td>10/2 Fri</td>
+              <td>
+                <b></b>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 7</td>
+              <td>10/6 Tu</td>
+              <td>
+                <b>B+ Trees</b>
+                <br><b>Query Optimization Part 1</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1BFOasRflBYKNe1QSkMljOlksnqyUHj82CmaNjfsAT3M/edit?usp=sharing"> B+ Trees</a>]
+                <br>[<a href="https://docs.google.com/presentation/d/1c6uhf28XSSeS8MWHuWJ-aAkf-JIu7GVul9GIDeXRi3E/edit#slide=id.g3e55f41ba5_5_58"> Query Optimization Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Homework 2 <br>Released</td>
+              <td>10/6 Tu</td>
+              <td>
+              </td>
+              <td>
+                [<a href="docs/CS145_Fall_2020_Homework_2.pdf">CS145_Fall_2020_Homework_2.pdf</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Project 2 <br>Released</td>
+              <td>10/7 Wed</td>
+              <td>
+                See Course Info for general submission information and the regrade policy.
+              </td>
+              <td>
+                [<a href="docs/Project_2_Handout_2020.pdf" download="">project2_handout.pdf</a>]
+                <br>[<a href="https://colab.research.google.com/drive/1FgX-DX0D5ySr6nVKbHb_lgeJ8T_ekD_O?usp=sharing">Project 2 colab</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 8</td>
+              <td>10/8 Th</td>
+              <td>
+                <b>Query Optimization Part 2</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1c6uhf28XSSeS8MWHuWJ-aAkf-JIu7GVul9GIDeXRi3E/edit#slide=id.g3e55f41ba5_5_58"> Query Optimization Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Section 2</td>
+              <td>10/9 Fr</td>
+              <td>
+                <b>9:30 AM &mdash; 10:20 AM</b>
+                <br>Remote
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/18wyiU6GM3VrnJLv8gftVRtFTZNYbauC5RbIdwWf-0fo/edit?usp=sharing">Section 2 slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 9</td>
+              <td>10/13 Tu</td>
+              <td>
+                <b>Guest Lecture</b>
+                <br><b>Dr. Girish Baliga</b> -- On Presto and Vertica at Uber
+                <br><b>Dr. Theo Vassilakis (ex-CTO at Grab)</b> -- early lead on Dremel/BigQuery, CEO of Metanautix
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 10</td>
+              <td>10/15 Th</td>
+              <td>
+                <b>Systems Design: Putting it all together</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/129XZY0RcVCLCIwmV1alDURzzSLDqIIwL9ei1iZZVeCY/edit#slide=id.g3bfdbcd7cb_0_0"> Systems Design Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 11</td>
+              <td>10/20 Tu</td>
+              <td>
+                <b>Exam Review</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1kgiFK5F-LbRAMCxEEHklQuf2nXTpAvBpA9IVHYBbhQQ/edit#slide=id.gc6f73a04f_0_0">Midterm review</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Exam #1</td>
+              <td>10/22 Th</td>
+              <td>
+                Check out Piazza for more information!
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Project 3 <br>Released</td>
+              <td>10/25 Sun</td>
+              <td>
+                See Course Info for general submission information and the regrade policy.
+              </td>
+              <td>
+                [<a href="https://colab.research.google.com/drive/1LFVBDhn66U3vV7nwBjVAJAX8nOrYoa17?usp=sharing">project3_template.ipynb</a>]
+                <br>[<a href="https://colab.research.google.com/drive/1wSRMxW3HziyO47U4n9ygzM_4y-sNyUsV?usp=sharing">project3_ml_warmup.ipynb</a>]
+                <br>[<a href="docs/High-Level_Rubric_for_Project_3.pdf">High Level Rubric for Project 3.pdf</a>]
+                <br>[<a href="docs/project3_handout.pdf">project 3 handout</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Project 2 Due</td>
+              <td>10/26 Mon</td>
+              <td>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 12</td>
+              <td>10/27 Tu</td>
+              <td>
+                <b>Transactions</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1IgVQfGucp2OD2EGp0SnXAif0Z7jptWlvNpAufbdTOp4/edit#slide=id.g3bfdbcd7cb_0_0">Transactions Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Homework 3 <br>Released</td>
+              <td>10/27 Tu</td>
+              <td>
+              </td>
+              <td>
+                [<a href="docs/CS145_Fall_2020_Homework_3.pdf">CS145_Fall_2020_Homework_3.pdf</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 13</td>
+              <td>10/29 Th</td>
+              <td>
+                <b>Transactions</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1IgVQfGucp2OD2EGp0SnXAif0Z7jptWlvNpAufbdTOp4/edit#slide=id.g3bfdbcd7cb_0_0">Transactions Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Project 3 <br>Proposal Due</td>
+              <td>10/30 Fr</td>
+              <td>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Section 3</td>
+              <td>10/30 Fr</td>
+              <td>
+                <b>9:30 AM &mdash; 10:20 AM</b>
+                <br>Remote
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1DedEfCWL2n5oPE3FJwPOXZ5rMBvr4qMgnLSjxhtfvAY/edit?usp=sharing">Section 3 slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 14</td>
+              <td>11/3 Tu</td>
+              <td>
+                <b>Cancelled due to election day.</b>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Lecture 15</td>
+              <td>11/5 Th</td>
+              <td>
+                <b>Transactions</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1IgVQfGucp2OD2EGp0SnXAif0Z7jptWlvNpAufbdTOp4/edit#slide=id.g3bfdbcd7cb_0_0">Transactions Slides</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 16</td>
+              <td>11/10 Tu</td>
+              <td>
+                <b>E/R Model and Design Theory</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1-2I78MMznp_8HZytF1YOdsLlTABlRiKasJH9ffriwHg/edit#slide=id.g74303bf83f_0_0">E/R Model</a>]
+                [<a href="https://docs.google.com/presentation/d/1ZLtBj2qpUruyJmJaJmpjUP3DGLLbHKZt3ADerRlyp3U/edit#slide=id.g3bfdbcd7cb_0_0">Design Theory</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Homework 4 <br>Released</td>
+              <td>11/11 Wed</td>
+              <td>
+              </td>
+              <td>
+                [<a href="docs/CS145_Fall_2020_Homework_4.pdf">CS145_Fall_2020_Homework_4.pdf</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Exam #2</td>
+              <td>11/12 Th</td>
+              <td>
+                TBA
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 17</td>
+              <td>11/17 Tu</td>
+              <td>
+                <b>Design Theory Continued</b>
+              </td>
+              <td>
+                [<a href="https://docs.google.com/presentation/d/1ZLtBj2qpUruyJmJaJmpjUP3DGLLbHKZt3ADerRlyp3U/edit#slide=id.g3bfdbcd7cb_0_0">Design Theory</a>]
+              </td>
+            </tr>
+            <tr>
+              <td>Project 3 Due</td>
+              <td>11/18 Wed</td>
+              <td>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Section 4</td>
+              <td>11/18 Wed</td>
+              <td>
+                <b>9:30 AM &mdash; 10:20 AM</b>
+                <br>Remote
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Lecture 18</td>
+              <td>11/19 Th</td>
+              <td>
+                <b>Guest Lecture</b>
+              </td>
+              <td>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row section" id="logistics">
+      <div class="col-md-12">
+        <h2 >Course Logistics and Policies</h2>
+        <hr>
+        <p><b>Prerequisites</b> CS 103 and CS 107 (or equivalent)</p>
+
+        <p><b>Grading</b> Projects: 50% (10 + 15 + 25), Exam #1: 25%, Exam #2: 25%.</p>
+        <p>We will be offering extra credit for in class participation and high quality answers to fellow student questions in piazza.</p>
+
+        <p>
+          <b>Piazza</b> Join our <a href="https://piazza.com/stanford/fall2020/cs145">Piazza</a> to receive important
+          announcements and get answers to your questions.
+        </p>
+
+        <p>
+          <b>Homeworks</b> Four homework assignments will be released bi-weekly with the solutions. 
+          The Homework assignments are completely optional and ungraded. However, we strongly encourage you to self-study 
+          the assignments as it will be a helpful resource for studying the exam material. The homework assignments 
+          reflect the exam material, so it is in your best interest to complete them thoroughly. Aside from preparing you 
+          for the exam, they will assess and reinforce your understanding of the material.
+
+          <!-- You can access the homeworks through <a href="http://www.newgradiance.com/services">Gradiance</a>
+          by creating an account (if you don't already have one) then signing
+          up for class token <b>E68759F1</b>. Once you have joined the class, navigate
+          to the Homeworks section on the left. <b>NOTE:</b> when we write "lab"
+          we indicate that you should do the corresponding lab found in the "Lab Projects" tab,
+          instead of the Homework tab. -->
+        </p>
+        <p><b>Sections</b> There will be 4 optional discussion sections that will accompany each homework assignment. 
+          The sections will be recorded and uploaded to Canvas. The slides will be posted online.
+
+        </p>
+
+        <b>Exam Dates</b>
+        <ul>
+          <li>Exam #1: Thursday, October 21st</li>
+          <li>
+            Exam #2: Thursday, November 11th
+          </li>
+        </ul>
+        <p>*Exams will be take-home and open notes. Teaching staff will communicate details of the exam logistics on course piazza. </p>
+
+        <p>
+          <b>Late Days</b> You are allowed a total of <b>two</b> late days
+          shared between all project deadlines. You do not lose any credit when
+          using a late day. If you run out of late days and submit after the
+          deadline, you receive a 0. (Late days can only be applied for projects.)
+        </p>
+
+        <p>
+          <b>Lectures</b> Lectures occur on Tues/Thurs 4:30-5:50 p.m. via zoom. Please find the zoom link on Canvas. 
+          NOTE that while attendance is not mandatory, we will be giving out extra credit for students with insightful in-class participation.
+        </p>
+        <p>
+          <b>Lecture Videos</b> Lecture videos will be recorded and posted on <a href="https://canvas.stanford.edu/">Canvas</a>.
+        </p>
+
+        <b>Textbook</b> There is no required textbook, but for students who want additional resources, we recommend the following two:
+        <ul>
+          <li>Database Systems 2nd Edition by Garcia-Molina</li>
+          <li>First Course in Database Systems 3rd Edition by Ullman</li>
+        </ul>
+
+        <p>
+          <b>Accomodations</b> If you need an academic accommodation based on a disability, you should initiate the request with the 
+          Office of Accessible Education (OAE). The OAE will evaluate the request, recommend accommodations, and prepare a letter for 
+          faculty. Students should contact the OAE as soon as possible and at any rate in advance of assignment deadlines, since timely 
+          notice is needed to coordinate accommodations. If you need OAE accommodations for exams, please notify us at least 7 days 
+          (ONE week) prior to the exams. 
+        </p>
+
+        <!-- <p>
+        <b>Contacting Course Staff</b> Please use Piazza for public questions. To privately reach the instructors
+        you can either make a private Piazza post or send an email to:
+        <br><a href = "mailto: cs145-aut1819-staff@lists.stanford.edu">cs145-aut1819-staff@lists.stanford.edu</a>
+      </p> -->
+
+      </div>
+
+    </div>
+
+    <div class="row section" id="honor" style="padding-top: 60px;">
+      <div class="col-md-12">
+        <h2>Honor Code/Collaboration Policy</h2>
+        <hr>
+        <p>
+          Students must adhere to <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">The Stanford Honor Code</a> 
+          and <a href="http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf">The Stanford Honor Code</a> as it  pertains to CS courses.
+        </p>
+        <p>
+          We encourage students to form study groups. Students may discuss and work on homework problems in groups. 
+          However, each student must write down the solution independently, and without referring to written notes from the joint session. 
+        </p>
+        <p>
+          It is an honor code violation to copy, refer to, or look at written or code solutions from a previous year, 
+          including but not limited to: official solutions from a previous year, solutions posted online, and solutions 
+          you or someone else may have written up in a previous year. Furthermore, it is an honor code violation to post 
+          your assignment solutions online, such as on a public git repo.
+        </p>
+        
+        <p>
+          The teaching staff will be using plagiarism detection software and if we have reason to believe that you are in 
+        violation of the honor code, we will follow the university policy to report it.
+        </p>
+        
+      </div>
+      
+    </div>
+
+    <div class="row section" id="projects" style="padding-top: 60px;">
+      <div class="col-md-12">
+        <h2>Projects</h2>
+        <hr>
+        <p>
+          <b>Group Size</b> The first two projects are individual only, but the third project you are allowed
+          to work in teams of two.
+        </p>
+
+        <p>
+          <b>Project Submissions</b>
+          You will submit your projects via Gradescope. Sign up for Gradescope
+          using your Stanford email address and student ID. The course code is
+          93E426.
+
+          Each assignment will include specific instructions regarding what
+          files to submit.
+        </p>
+
+        <p>
+          <b>Regrade Policy</b>
+          If you think that we've made a grading mistake or that the work
+          you submitted should be regraded, submit a regrade request on
+          Gradescope within one week of receiving your grade. Be sure that you
+          prepare a short and convincing argument on Gradescope about why you
+          think your work was incorrectly graded – we reserve the right to
+          ignore your regrade request if you don't provide a justification.
+
+          If you submit a regrade request, we reserve the right to regrade your
+          entire assignment. This means that your overall score could go
+          down.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row section" id="staff">
+      <div class="col-md-12">
+        <h2>Staff</h2>
+        <hr>
+        <div class="instructors">
+          <table>
+            <tr>
+              <td id="shiva">
+                <h4>Instructor</h4>
+                <div>
+                  <div><img src="img/shiva.jpg" alt="shiva"></div>
+                  <div>Shiva Shivakumar</div>
+                </div>
+              </td>
+              <td>
+                <h4 style="text-align: left; margin-left: 25px">Teaching Assistants</h4>
+                <div>
+                  <div><img src="img/Emma_spellman.jpg" alt="albert"></div>
+                  <div>Emma Spellman (head)</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Ailyn_Tong.JPG" alt="andrew"></div>
+                  <div>Ailyn Tong</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Hikaru_Photo.jpg" alt="bryan"></div>
+                  <div>Hikaru Hotta</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Jingjing_Tian.png" alt="eric"></div>
+                    <div>Jingjing Tian</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Michael_Lin.jpg" alt="hang"></div>
+                  <div>Michael Lin</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Nancy_Wang.JPG" alt="jennie"></div>
+                  <div>Nancy Wang</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Xinyi_Yu.jpg" alt="luyao"></div>
+                  <div>Xinyi Yu</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Ariel_Zhang.jpg" alt="ariel"></div>
+                  <div>Ariel Zhang</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Sunwoo_Kang.jpeg" alt="sunwoo"></div>
+                  <div>Sunwoo Kang</div>
+                </div>
+
+                <div>
+                  <div><img src="img/Amelie_Byun.jpg" alt="shiva"></div>
+                  <div>Amelie Byun <br>(course coordinator)</div>
+                </div>
+
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row section" id="officehours">
+      <div class="col-md-12 mb-4">
+        <h2>Office Hours</h2>
+        <hr>
+        <p>All OH will be held online. All students should sign up at https://queuestatus.com/queues/1148 . <br>
+          Please read the piazza post @10 carefully on how OH works for this quarter. </p>
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=djFvZjFxOGZvYjMwN2VxcjJxOHA1czlmbmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Stanford University 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

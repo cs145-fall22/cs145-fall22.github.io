@@ -1,0 +1,62 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.section {
+  padding-top: 60px
+}
+
+/*Schedule Table*/
+
+th, #scheduleTable td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 2px solid #343a40;
+}
+
+#eventCol {
+  min-width: 150px;
+}
+
+#dateCol {
+  min-width: 100px;
+}
+
+/*Instructors*/
+
+#shiva {
+  padding-right: 50px
+}
+
+.instructors {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.instructors table {
+  width: 100%;
+}
+
+.instructors td {
+  vertical-align: top;
+}
+
+.instructors td > div {
+  float: left;
+  min-width: 135px;
+  margin-bottom: 24px;
+}
+
+.instructors img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 10px;
+}
