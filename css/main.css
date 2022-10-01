@@ -44,6 +44,8 @@ th, #scheduleTable td {
 }
 
 .instructors td {
+  width:16.6%;
+  word-break: break-all;
   vertical-align: top;
 }
 
@@ -59,4 +61,5 @@ th, #scheduleTable td {
   height: 100px;
   margin: auto;
   padding: 10px;
+  overflow: hidden;
 }
